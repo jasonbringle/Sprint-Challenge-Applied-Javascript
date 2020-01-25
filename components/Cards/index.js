@@ -22,11 +22,15 @@ axios
     .get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response => {
         console.log(response)
+        Object.values(response.data.articles).forEach(topic => {
+            topic.forEach(info => {
+                cardsLocate.appendChild(cardsCreator(info));
+            });
+        });
     })
     .catch(error => {
         console.log('error!!')
     })
-
 
 const cardsCreator = (data) => {
 //Elements
