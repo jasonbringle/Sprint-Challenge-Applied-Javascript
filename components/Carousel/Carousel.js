@@ -17,8 +17,10 @@
     <div class="right-button"> > </div>
   </div>
 */
+const carouselHere = document.querySelector('.carousel-container')
+carouselHere.appendChild(carouselCreator())
 
-const carouselCreator = (data) => {
+const carouselCreator = () => {
 //ELements
 const carousel = document.createElement('div');
 const leftBut = document.createElement('div');
@@ -42,11 +44,20 @@ leftBut.classList.add('left-button');
 rightBut.classList.add('right-button');
 
 //Content
-mountains.src = data;
-mountains.src = data;
-mountains.src = data;
-mountains.src = data;
+mountains.src = 'https://www.freepik.com/free-photo/beautiful-landscape_1468389.htm#page=1&query=Mountains&position=0;'
+computer.src = 'https://www.freepik.com/free-photo/cropped-view-hands-typing-laptop_1121914.htm#page=1&query=Computer&position=0';
+trees.src = 'https://www.freepik.com/free-photo/beautiful-natural-landscape_880912.htm#page=1&query=trees&position=5';
+turntable.src = 'https://www.freepik.com/free-photo/spinning-record-player-with-vintage-vinyl_5896977.htm#page=1&query=Turntable&position=11';
 
+leftBut.addEventListener('click', (event) => {
+  event.targer.classList.toggle('');
+});
+
+rightBut.addEventListener('click', (event) => {
+  event.targer.classList.toggle('');
+});
 return carousel
 
 }
+
+  
