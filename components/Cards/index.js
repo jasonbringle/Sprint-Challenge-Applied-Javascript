@@ -17,3 +17,14 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+const cardsCreator = (data) => {
+    //Elements
+const card = document.createElement('div');
+const headline = document.createElement('div');
+const authorDiv = document.createElement('div');
+const imgCont = document.createElement('div');
+const image = document.createElement('img');
+const authName = document.createElement('span');
+
+}
