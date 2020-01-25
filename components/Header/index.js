@@ -16,5 +16,24 @@ function Header() {
     const title = document.createElement('h1');
     const temp = document.createElement('span');
 
+    //Tree
+    headerDiv.appendChild(date);
+    headerDiv.appendChild(title);
+    headerDiv.appendChild(temp);
+
+    //Classes
+    headerDiv.classList.add('header');
+    date.classList.add('date');
+    temp.classList.add('temp');
+
+    //Content
+    date.textContent = 'MARCH 28, 2019';
+    title.textContent = 'Lambda Times';
+    temp.textContent = '98°';
+
+    return headerDiv
 
 }
+
+const thisPlace = document.querySelector('.header-container');
+thisPlace.appendChild(Header());
