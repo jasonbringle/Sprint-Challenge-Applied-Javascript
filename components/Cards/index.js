@@ -27,4 +27,15 @@ const imgCont = document.createElement('div');
 const image = document.createElement('img');
 const authName = document.createElement('span');
 
+    //Tree
+card.appendChild(headline);
+card.appendChild(authorDiv);
+
+authorDiv.appendChild(imgCont);
+authorDiv.appendChild(authName);
+
+imgCont.appendChild(image);
+
+
+
 }
